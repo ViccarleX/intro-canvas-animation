@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+    <title>Intro canvas 2D</title>
+    <style>
+        .header-color {
+            background-color: #4B0082; /* Color morado oscuro */
+        }
+        .footer-color {
+            background-color: #4B0082; /* Color morado oscuro */
+        }
+        .canvas-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .canvas-row {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header class="header-color py-3">
+        <div class="container">
+          <h1 class="text-center text-white">3.2 POO para gráficos 2D</h1>
+        </div>
+    </header>
+    <main class="container flex-column mt-3 shadow p-3 mb-5 bg-body rounded border border-success rounded-start p-2">
+        
+        <div class="d-flex flex-row bd-highlight mb-3 justify-content-center">
+            <h1>Animaciones 2D con canvas</h1>
+        </div>
+
+        <div class="bd-highlight shadow p-3 mb-5 bg-body rounded border border-info p-2 canvas-container">
+            <div class="canvas-row">
+                <div class="canvas-item text-center">
+                    <p class="fw-bold fst-italic">Sistema Solar animado</p>
+                    <canvas class="border shadow-sm bg-body rounded border-warning" id="canvasSolarsistem" width="300" height="300"></canvas>                
+                </div>
+                <div class="canvas-item text-center">
+                    <p class="fw-bold fst-italic">Reloj animado</p>
+                    <canvas class="border shadow-sm bg-body rounded border-warning" id="canvasclock" width="300" height="300"></canvas>               
+                </div>
+            </div>
+            <div class="canvas-item text-center mt-5">
+                <p class="fw-bold fst-italic">Foto animada</p>
+                <canvas class="border shadow-sm bg-body rounded border-warning" id="canvasImage" width="700" height="600"></canvas>               
+            </div>
+        </div>
+        
+    </main>
+
+    <footer class="footer-color py-3 text-center fixed-bottom">
+        <div class="container">
+          <span class="text-muted">Todos los derechos reservados por Victor Alexis Rangel Perez &copy; 2024</span>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    <script src="JS/main.js"></script>
+</body>
+</html>
+
+
